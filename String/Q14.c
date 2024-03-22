@@ -1,11 +1,19 @@
-//Write a program in C to combine two strings manually
-#include<stdio.h>
-#include<string.h>
-int main(){
-    char str1[50],str2[50];
-    printf("Enter First String :");
-    gets(str1);
-    printf("Enter Secound String :");
-    gets(str2);
-    printf("\n Combine Two Strings Manually:%s",strcat(str1,str2));
+#include <stdio.h>
+int main()
+{
+    char first_string[20];
+    char second_string[20];
+     int i;
+    printf("Enter the first string:: ");
+    gets(first_string);
+    printf("\n Enter the second string::");
+    gets(second_string);
+    for(i=0;first_string[i]!='\0';i++);
+    for(int j=0;second_string[j]!='\0';j++)
+    {
+        first_string[i]=second_string[j];
+        i++;
+    }
+    first_string[i]='\0';
+   printf("After concatenation: %s",first_string);
 }

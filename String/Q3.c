@@ -4,6 +4,6 @@
 int main(){
     char str[20];
     printf("Enter The String :");
-    scanf("%s",&str);
+    gets(str);
     printf("The String Is Revrse Order :%s",strrev(str));
 }
